@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa Drawing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="logo.jpg" alt="Logo" class="logo">
+            <h1>Secret Santa Drawing</h1>
+        </div>
+    </header>
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+
+    <!-- Advertisement Section -->
+    <section class="advertisement">
+        <a href="https://www.amazon.com/WRAPAHOLIC-Reversible-Christmas-Wrapping-Paper/dp/B0B2P7XQQT/ref=sr_1_6?crid=3VXXKYSMNW1ZF&dib=eyJ2IjoiMSJ9.g6dlSF5HVcSlq-3yPJsus0Ml0KtAMMdnohCn23X5DbVdQ_u3gHEQohhIEzP-fFnsKYsdjwYCSVAIb_8_ju8zdrz_eB48Xy2kBzFIUk4sh0Sa-BVdrdH8_qNI5HP8lvP9pjhxK5o_4dGLNQXQNtEyHr_sXnQgtrCts8n_3P-t5EJL1Dj-9YDBe0wzqqZYbdYwTnKD8pdIqzyxW7on-AyQIEw5SGUnWsc0yG7w3KqqnRocHR6LaVAt4hQtu7TJ57G4phTrmSv4dnwlnen88XPCY1-CnYDS9GNXE4kvZKePQ7M.SeKYldD89GheJG8PULamBosyS0e6dwXZhJVBoNHsmEU&dib_tag=se&keywords=christmas+wrapping+paper&qid=1731368288&sprefix=christmas%2Caps%2C183&sr=8-6" target="_blank">
+            <img src="christmas-holiday-gifts-2022-billboard-1548.webp" alt="Amazon Product Advertisement" class="ad-image">
+        </a>
+    </section>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Secret Santa Drawing</h2>
+        <label for="nameInput">Enter your name: </label>
+        <input type="text" id="nameInput" placeholder="Your Name">
+        <button onclick="drawName()">Draw Secret Santa</button>
+        <p id="message"></p>
+    </main>
+    <footer>
+        <ul> 
+            <h2>This took awhile, I ran into some problems saying the error saying "uncaught TypeError TypeError: Cannot read properties of null (reading 'addEventListener')": I had to ask AI how to fix that and it said to put the script reference at the bottom right before the body paragragh because it was loading faster than the HTML. </h2>
+            <h2>Another problem I ran into was trying to make the secret santa names not duplicate. I realized you could track the users inputs and put the assigned names into an empty list that will append into it after they are choosen.</h2>
+        </ul>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
